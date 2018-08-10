@@ -22,21 +22,39 @@
       <div class="img-cover">
         <div class="img"></div>
       </div>
-      <div class="text"> le mix-blend-mode est un outil assez puissant et cool pour retoucher vos images sans passer par photoshop et autre logiciel de retourche.
+      <div class="text"> le mix-blend-mode est un outil assez puissant et cool pour retoucher vos images sans passer par photoshop et autre logiciel de retouche.
+        il permet de créer des effets sympa en quelques lignes de codes seulement.
+        par exemple, luminosity produit une couleur à partir de la luminosité de la couleur source, mélangée à la teinte et la saturation de la couleur de background.
 
-        <pre><code class="language-css">
-
-        </code></pre>
+        <pre><code class="language-css">.para1 .img{
+            mix-blend-mode:luminosity;
+            } </code></pre>
       </div>
     </div>
     <div class="separ"></div>
     <div class="para2">
       <div class="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        le mix-blend-mode permet également d'afficher des textes en transparence soit avec multiply soit avec overlay. le titre en haut de page
+        est généré avec un overlay, l'image ci-contre avec un multiply.
+        <pre><code class="language-css">.texte{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: 1vw;
+          padding: 0;
+          text-align: center;
+          font-size: 14vw;
+          color: #fff;
+          text-transform: uppercase;
+          text-shadow: 0 5px 10px rgba(0,0,0,1);
+          mix-blend-mode:multiply;
+          box-shadow: 0 5px 10px rgba(0,0,0,1);
+          background: rgba(0,0,0,0.7);
+       }</code></pre>
       </div>
       <div class="img-cover">
         <div class="img"></div>
+        <div class="texte">Texte</div>
       </div>
     </div>
     <div class="separ"></div>
@@ -45,8 +63,33 @@
         <div class="img"></div>
       </div>
       <div class="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         Enfin, couplé à des animations, on peux faire des modifications vraiment infinie.
+         <pre><code class="language-css">  .para3 .img{
+         mix-blend-mode:difference;
+         }
+
+         .para3 .img-cover{
+           background: repeating-linear-gradient(60deg,#ef6c00,#ef6c00 20px, #ffb74d 100px,#ffb74d 100px );
+           animation: 0.7s infinite alternate anime;
+         }
+
+         @keyframes anime {
+           0%{
+             background: repeating-linear-gradient(60deg,#ef6c00,#ef6c00 20px, #ffb74d 100px,#ffb74d 100px );
+           }
+           25%{
+             background: repeating-linear-gradient(60deg,#ffc107,#ffc107 20px, #ffd54f 100px,#ffd54f 100px );
+           }
+           50%{
+             background: repeating-linear-gradient(60deg,#76ff03,#76ff03 20px, #ccff90 100px,#ccff90 100px );
+           }
+           75%{
+             background: repeating-linear-gradient(60deg,#00e676,#00e676 20px, #b9f6ca 100px,#b9f6ca 100px );
+           }
+           100%{
+             background: repeating-linear-gradient(60deg,#1de9b6,#1de9b6 20px, #a7ffeb 100px,#a7ffeb 100px );
+           }
+         } </code></pre>
       </div>
     </div>
 
