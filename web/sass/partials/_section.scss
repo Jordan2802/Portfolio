@@ -1,0 +1,59 @@
+@mixin width {
+    width:100%; 
+}
+@mixin barre($barre) {
+    margin: 10px 0;
+    border:1px solid $barre; 
+}
+html{
+    color: $maCouleur;
+}
+nav,section,.fond1,.fond2{
+    @include width;
+}
+nav{
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .sec{
+        text-align: right;
+        a{
+            margin: 0 50px;
+            text-decoration: none;
+            color: $maCouleur;
+            font-family: $maFont;
+            text-align: center;
+        }
+        margin:35px 0;
+    }
+    .barre1,.barre2,.barre3{
+        
+        @include barre($barre);
+    }
+    .barre1{
+        width: 35%;
+    }
+    .barre2{
+        width: 45%;
+    }
+    .barre3{
+        width: 25%;
+    }
+}
+section, .fond1, .fond2{
+    position: relative;
+}
+section{
+    height: 100vh;
+}
+.fond1{
+    height: 60vh;
+    background: linear-gradient(black,80%,rgb(148, 146, 146));
+}
+.fond2{
+    background: linear-gradient(rgb(54, 53, 53),black,80%,rgb(54, 53, 53));
+    height: 40vh;
+}

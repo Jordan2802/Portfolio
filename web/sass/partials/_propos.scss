@@ -1,0 +1,57 @@
+.propos{
+    position: absolute;
+    top: 40%;
+    width:100%;
+    display: flex;
+    .profil{
+        align-items: center;
+        display: flex;
+        width: 50%;
+        img{
+            margin: 0 30px;
+            margin-left:150px;
+            width:180px;
+            height:250px;
+        }
+    }
+    .tech{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        text-align: center;
+        div{
+            width: 33%;
+            height: 20vh;
+            margin: 0;
+            padding: 0 25px;
+            &:first-child{
+               text-shadow:  0 3px 6px $couleur1; 
+            }
+            &:nth-child(2){
+                text-shadow:  0 3px 6px $couleur2; 
+                border-left: 2px solid $maCouleur;
+                border-right: 2px solid $maCouleur;
+                
+            }
+            &:last-child{
+                text-shadow:  0 3px 6px $couleur3; 
+             }
+        }
+    }
+}
+.descrtexte{
+    width: 40%;
+    height: 30vh;
+    margin-top:5vh;
+    margin-right: 5vh;
+    display: flex;
+    float: right;
+    .texte{
+        align-items: center;
+        background-color: rgba(1,1,1,0.5);
+        width: 100%;
+        text-align: justify;
+        padding: 50px;
+        
+    }
+}

@@ -1,0 +1,25 @@
+ .carre,.logo,.reflet{
+    position: absolute;
+}
+.carre{
+    top: 22%;
+}
+.logo{
+    top: 20%;
+}
+.carre{
+    left:30%;
+}
+.reflet{
+    top: 12%;
+    left:35%;
+    height: 35vh;
+}
+.nomsite{
+    z-index: 2;
+    position: fixed;
+    top:80%;
+}
+.nomsite,.logo{
+    left:3%;
+}
