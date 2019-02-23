@@ -10,11 +10,13 @@
     height: 400px;
 }
 .cadre{
-    right: 50px;
-    
+    right: 150px;
+    margin-top:20px;
 }
 .gdeimg{
-    left: 50px;
+    width: 600px;
+    height: 400px;
+    left: 150px;
     border: 2px solid black;
 }
 
@@ -22,7 +24,7 @@
     width: 600px;
     height: 400px;
     img{
-        width: auto;
+        width: 100%;
     }
 }
 

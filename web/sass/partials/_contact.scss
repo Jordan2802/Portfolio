@@ -1,0 +1,24 @@
+form{
+    position: absolute;
+    width: 40%;
+    top: 120px;
+    left: 100px;
+    z-index: 151515;
+    label{
+        color:white;
+    }
+    input{
+        margin: 10px  10px 10px 0;
+    }
+}
+.mescontacts{
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    span{
+        font-weight: bolder;
+    }
+    p{
+        margin-top: 10px;
+    }
+}
