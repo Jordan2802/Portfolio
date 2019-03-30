@@ -9,11 +9,15 @@ $barre: rgb(182, 179, 179);
 $couleur1: #F25A31;
 $couleur2: #6C7EB7;
 $couleur3: #107CD2;
-p, h2{
+p,h1, h2{
     color:white;
 }
+
 @import "partials/section";
 @import "partials/home";
 @import "partials/projets";
 @import "partials/propos";
 @import "partials/contact";
+@import "partials/phone";
+@import "partials/tablet";
+@import "partials/tabletL";

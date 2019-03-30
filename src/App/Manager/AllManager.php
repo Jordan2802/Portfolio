@@ -31,29 +31,29 @@ class AllManager{
      * UserManager  constructor.
      * initialisation de la connexion à la base de donnée. 
      */
-    public function __construct(){
+    //public function __construct(){
 
-        $host_name = 'localhost';
-        $database = 'portfolio';
-        $user_name = 'root';
-        $password = '';
+    //    $host_name = 'db760278169.hosting-data.io';
+    //   $database = 'db760278169';
+    //    $user_name = 'dbo760278169';
+    //    $password = 'Portfolio@08';
 
-        $this->pdo = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8') );
-    }
+    //    $this->pdo = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8') );
+    //}
    /**
      * CodeManager  constructor.
      * initialisation de la connexion à la base de donnée. 
      */
-    // public function __construct(){
-    //     $host_name = 'db760256997.hosting-data.io';
-    //     $database = 'db760256997';
-    //     $user_name = 'dbo760256997';
-    //     $password = 'chefdoeuvre';
+     public function __construct(){
+         $host_name = 'localhost';
+         $database = 'portfolio';
+         $user_name = 'root';
+         $password = '';
 
-    //     $this->pdo = new PDO("mysql:host=$host_name; dbname=$database;",
-    //     $user_name, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8') );
+         $this->pdo = new PDO("mysql:host=$host_name; dbname=$database;",
+         $user_name, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8') );
    
         
-    // }
+     }
 }
 

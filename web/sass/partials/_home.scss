@@ -3,13 +3,15 @@
 }
 .carre{
     top: 22%;
+    left:30%;
+}
+.carre2{
+    display: none;
 }
 .logo{
     top: 20%;
 }
-.carre{
-    left:30%;
-}
+
 .reflet{
     top: 12%;
     left:35%;
@@ -22,4 +24,10 @@
 }
 .nomsite,.logo{
     left:3%;
+}
+h1{
+    position: relative;
+    top:80%;
+    margin-left:70px;
+    font-size:1.3em;
 }

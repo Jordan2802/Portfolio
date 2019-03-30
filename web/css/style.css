@@ -68,7 +68,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 12, ../sass/style.scss */
-p, h2 {
+p, h1, h2 {
   color: white;
 }
 
@@ -78,11 +78,16 @@ html {
 }
 
 /* line 11, ../sass/partials/_section.scss */
+.nav2 {
+  display: none;
+}
+
+/* line 14, ../sass/partials/_section.scss */
 nav, section, .fond1, .fond2 {
   width: 100%;
 }
 
-/* line 14, ../sass/partials/_section.scss */
+/* line 17, ../sass/partials/_section.scss */
 nav {
   z-index: 2;
   position: fixed;
@@ -90,12 +95,12 @@ nav {
   flex-direction: column;
   align-items: flex-end;
 }
-/* line 21, ../sass/partials/_section.scss */
+/* line 24, ../sass/partials/_section.scss */
 nav .sec {
   text-align: right;
   margin: 35px 0;
 }
-/* line 23, ../sass/partials/_section.scss */
+/* line 26, ../sass/partials/_section.scss */
 nav .sec a {
   margin: 0 50px;
   text-decoration: none;
@@ -103,41 +108,42 @@ nav .sec a {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
-/* line 32, ../sass/partials/_section.scss */
+/* line 35, ../sass/partials/_section.scss */
 nav .barre1, nav .barre2, nav .barre3 {
   margin: 10px 0;
   border: 1px solid #b6b3b3;
 }
-/* line 36, ../sass/partials/_section.scss */
+/* line 39, ../sass/partials/_section.scss */
 nav .barre1 {
   width: 35%;
 }
-/* line 39, ../sass/partials/_section.scss */
+/* line 42, ../sass/partials/_section.scss */
 nav .barre2 {
   width: 45%;
 }
-/* line 42, ../sass/partials/_section.scss */
+/* line 45, ../sass/partials/_section.scss */
 nav .barre3 {
   width: 25%;
 }
 
-/* line 46, ../sass/partials/_section.scss */
+/* line 49, ../sass/partials/_section.scss */
 section, .fond1, .fond2 {
   position: relative;
+  width: 100%;
 }
 
-/* line 49, ../sass/partials/_section.scss */
+/* line 53, ../sass/partials/_section.scss */
 section {
   height: 100vh;
 }
 
-/* line 52, ../sass/partials/_section.scss */
+/* line 56, ../sass/partials/_section.scss */
 .fond1 {
   height: 60vh;
   background: linear-gradient(#1c3435, 80%, #3e9489);
 }
 
-/* line 56, ../sass/partials/_section.scss */
+/* line 60, ../sass/partials/_section.scss */
 .fond2 {
   background: linear-gradient(#19393b, #1c3435, 80%, #19393b);
   height: 40vh;
@@ -151,35 +157,44 @@ section {
 /* line 4, ../sass/partials/_home.scss */
 .carre {
   top: 22%;
+  left: 30%;
 }
 
-/* line 7, ../sass/partials/_home.scss */
+/* line 8, ../sass/partials/_home.scss */
+.carre2 {
+  display: none;
+}
+
+/* line 11, ../sass/partials/_home.scss */
 .logo {
   top: 20%;
 }
 
-/* line 10, ../sass/partials/_home.scss */
-.carre {
-  left: 30%;
-}
-
-/* line 13, ../sass/partials/_home.scss */
+/* line 15, ../sass/partials/_home.scss */
 .reflet {
   top: 12%;
   left: 35%;
   height: 35vh;
 }
 
-/* line 18, ../sass/partials/_home.scss */
+/* line 20, ../sass/partials/_home.scss */
 .nomsite {
   z-index: 2;
   position: fixed;
   top: 80%;
 }
 
-/* line 23, ../sass/partials/_home.scss */
+/* line 25, ../sass/partials/_home.scss */
 .nomsite, .logo {
   left: 3%;
+}
+
+/* line 28, ../sass/partials/_home.scss */
+h1 {
+  position: relative;
+  top: 80%;
+  margin-left: 70px;
+  font-size: 1.3em;
 }
 
 /* line 1, ../sass/partials/_projets.scss */
@@ -233,56 +248,66 @@ section {
   height: 100px;
 }
 
+/* line 40, ../sass/partials/_projets.scss */
+.carousel-item {
+  display: none;
+}
+
 /* line 1, ../sass/partials/_propos.scss */
+.technoT {
+  display: none;
+}
+
+/* line 4, ../sass/partials/_propos.scss */
 .propos {
   position: absolute;
   top: 40%;
   width: 100%;
   display: flex;
 }
-/* line 6, ../sass/partials/_propos.scss */
+/* line 9, ../sass/partials/_propos.scss */
 .propos .profil {
   align-items: center;
   display: flex;
   width: 50%;
 }
-/* line 10, ../sass/partials/_propos.scss */
+/* line 13, ../sass/partials/_propos.scss */
 .propos .profil img {
   margin: 0 30px;
   margin-left: 150px;
   width: 180px;
   height: 250px;
 }
-/* line 17, ../sass/partials/_propos.scss */
+/* line 20, ../sass/partials/_propos.scss */
 .propos .tech {
   display: flex;
   width: 50%;
   justify-content: space-between;
   text-align: center;
 }
-/* line 22, ../sass/partials/_propos.scss */
+/* line 25, ../sass/partials/_propos.scss */
 .propos .tech div {
   width: 33%;
   height: 20vh;
   margin: 0;
   padding: 0 25px;
 }
-/* line 27, ../sass/partials/_propos.scss */
+/* line 30, ../sass/partials/_propos.scss */
 .propos .tech div:first-child {
   text-shadow: 0 3px 6px #F25A31;
 }
-/* line 30, ../sass/partials/_propos.scss */
+/* line 33, ../sass/partials/_propos.scss */
 .propos .tech div:nth-child(2) {
   text-shadow: 0 3px 6px #6C7EB7;
   border-left: 2px solid white;
   border-right: 2px solid white;
 }
-/* line 36, ../sass/partials/_propos.scss */
+/* line 39, ../sass/partials/_propos.scss */
 .propos .tech div:last-child {
   text-shadow: 0 3px 6px #107CD2;
 }
 
-/* line 42, ../sass/partials/_propos.scss */
+/* line 45, ../sass/partials/_propos.scss */
 .descrtexte {
   width: 40%;
   height: 30vh;
@@ -291,7 +316,7 @@ section {
   display: flex;
   float: right;
 }
-/* line 49, ../sass/partials/_propos.scss */
+/* line 52, ../sass/partials/_propos.scss */
 .descrtexte .texte {
   align-items: center;
   background-color: rgba(1, 1, 1, 0.5);
@@ -304,7 +329,7 @@ section {
 form {
   position: absolute;
   width: 40%;
-  top: 120px;
+  top: 80px;
   left: 100px;
   z-index: 151515;
 }
@@ -330,4 +355,491 @@ form input {
 /* line 21, ../sass/partials/_contact.scss */
 .mescontacts p {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 426px) {
+  /* line 3, ../sass/partials/_phone.scss */
+  .carre,
+  .reflet,
+  .info,
+  .propos .profil,
+  nav {
+    display: none;
+  }
+
+  /* line 11, ../sass/partials/_phone.scss */
+  .nav2 {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  /* line 16, ../sass/partials/_phone.scss */
+  .nav2 .sec2 {
+    text-align: center;
+  }
+  /* line 19, ../sass/partials/_phone.scss */
+  .nav2 .sec2 a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+
+  /* line 30, ../sass/partials/_phone.scss */
+  .carre2 {
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 50% !important;
+    left: 15%;
+  }
+
+  /* line 40, ../sass/partials/_phone.scss */
+  .nomsite {
+    position: fixed;
+    top: 65%;
+  }
+
+  /* line 45, ../sass/partials/_phone.scss */
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* line 50, ../sass/partials/_phone.scss */
+  form {
+    width: 70%;
+    left: 15%;
+    top: 20px !important;
+  }
+
+  /* line 56, ../sass/partials/_phone.scss */
+  .gdeimg {
+    width: 70%;
+    height: auto;
+    top: 15%;
+    left: 15%;
+  }
+  /* line 62, ../sass/partials/_phone.scss */
+  .gdeimg .imgtaille {
+    height: auto;
+  }
+
+  /* line 67, ../sass/partials/_phone.scss */
+  .cadre {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 35vh !important;
+    height: auto;
+  }
+
+  /* line 76, ../sass/partials/_phone.scss */
+  .description {
+    display: flex;
+    align-items: center;
+  }
+  /* line 80, ../sass/partials/_phone.scss */
+  .description p {
+    text-align: center;
+  }
+  /* line 84, ../sass/partials/_phone.scss */
+  .description a {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  /* line 90, ../sass/partials/_phone.scss */
+  .img {
+    position: relative;
+    width: 80%;
+    top: 50%;
+  }
+
+  /* line 96, ../sass/partials/_phone.scss */
+  .tech {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between;
+    text-align: center;
+  }
+  /* line 102, ../sass/partials/_phone.scss */
+  .tech div {
+    width: 33%;
+    height: 20vh;
+    margin: 0;
+    padding: 0 25px;
+  }
+  /* line 108, ../sass/partials/_phone.scss */
+  .tech div:first-child {
+    text-shadow: 0 3px 6px #F25A31;
+  }
+  /* line 112, ../sass/partials/_phone.scss */
+  .tech div:nth-child(2) {
+    text-shadow: 0 3px 6px #6C7EB7;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  }
+  /* line 119, ../sass/partials/_phone.scss */
+  .tech div:last-child {
+    text-shadow: 0 3px 6px #107CD2;
+  }
+
+  /* line 125, ../sass/partials/_phone.scss */
+  .technoT {
+    display: block;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 2em;
+  }
+
+  /* line 132, ../sass/partials/_phone.scss */
+  .descrtexte {
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    margin-top: 15vh !important;
+    float: left;
+    display: flex;
+  }
+  /* line 140, ../sass/partials/_phone.scss */
+  .descrtexte .texte {
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  /* line 150, ../sass/partials/_phone.scss */
+  .mescontacts {
+    top: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 3, ../sass/partials/_tablet.scss */
+  .carre,
+  .reflet,
+  .info,
+  .propos .profil,
+  nav {
+    display: none;
+  }
+
+  /* line 11, ../sass/partials/_tablet.scss */
+  .nav2 {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  /* line 16, ../sass/partials/_tablet.scss */
+  .nav2 .sec2 {
+    text-align: center;
+  }
+  /* line 19, ../sass/partials/_tablet.scss */
+  .nav2 .sec2 a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+
+  /* line 30, ../sass/partials/_tablet.scss */
+  .carre2 {
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 45%;
+    left: 15%;
+  }
+
+  /* line 38, ../sass/partials/_tablet.scss */
+  .logo,
+  .nomsite {
+    width: 50%;
+    left: 25%;
+  }
+
+  /* line 44, ../sass/partials/_tablet.scss */
+  .nomsite {
+    position: fixed;
+    top: 65%;
+  }
+
+  /* line 49, ../sass/partials/_tablet.scss */
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* line 54, ../sass/partials/_tablet.scss */
+  form {
+    width: 70%;
+    left: 15%;
+    top: 15vh;
+  }
+
+  /* line 60, ../sass/partials/_tablet.scss */
+  .gdeimg {
+    width: 70%;
+    height: auto;
+    top: 15%;
+    left: 15%;
+  }
+  /* line 66, ../sass/partials/_tablet.scss */
+  .gdeimg .imgtaille {
+    height: auto;
+  }
+
+  /* line 71, ../sass/partials/_tablet.scss */
+  .cadre {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 45vh;
+    height: auto;
+  }
+
+  /* line 80, ../sass/partials/_tablet.scss */
+  .description {
+    display: flex;
+    align-items: center;
+  }
+  /* line 84, ../sass/partials/_tablet.scss */
+  .description p {
+    text-align: center;
+  }
+  /* line 88, ../sass/partials/_tablet.scss */
+  .description a {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  /* line 94, ../sass/partials/_tablet.scss */
+  .img {
+    position: relative;
+    width: 80%;
+    top: 50%;
+  }
+
+  /* line 100, ../sass/partials/_tablet.scss */
+  .tech {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between;
+    text-align: center;
+  }
+  /* line 106, ../sass/partials/_tablet.scss */
+  .tech div {
+    width: 33%;
+    height: 20vh;
+    margin: 0;
+    padding: 0 25px;
+  }
+  /* line 112, ../sass/partials/_tablet.scss */
+  .tech div:first-child {
+    text-shadow: 0 3px 6px #F25A31;
+  }
+  /* line 116, ../sass/partials/_tablet.scss */
+  .tech div:nth-child(2) {
+    text-shadow: 0 3px 6px #6C7EB7;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  }
+  /* line 122, ../sass/partials/_tablet.scss */
+  .tech div:last-child {
+    text-shadow: 0 3px 6px #107CD2;
+  }
+
+  /* line 128, ../sass/partials/_tablet.scss */
+  .technoT {
+    display: block;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 2em;
+  }
+
+  /* line 135, ../sass/partials/_tablet.scss */
+  .descrtexte {
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    margin-top: 20vh;
+    float: left;
+    display: flex;
+  }
+  /* line 143, ../sass/partials/_tablet.scss */
+  .descrtexte .texte {
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  /* line 153, ../sass/partials/_tablet.scss */
+  .mescontacts {
+    top: 60%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  /* line 3, ../sass/partials/_tabletL.scss */
+  .carre,
+  .reflet,
+  .info,
+  .propos .profil,
+  nav {
+    display: none;
+  }
+
+  /* line 11, ../sass/partials/_tabletL.scss */
+  .nav2 {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  /* line 16, ../sass/partials/_tabletL.scss */
+  .nav2 .sec2 {
+    text-align: center;
+  }
+  /* line 19, ../sass/partials/_tabletL.scss */
+  .nav2 .sec2 a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+
+  /* line 30, ../sass/partials/_tabletL.scss */
+  .carre {
+    display: block;
+    position: absolute;
+    width: 50%;
+    left: 45%;
+  }
+
+  /* line 39, ../sass/partials/_tabletL.scss */
+  .nomsite {
+    position: fixed;
+    top: 62%;
+  }
+
+  /* line 44, ../sass/partials/_tabletL.scss */
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* line 49, ../sass/partials/_tabletL.scss */
+  form {
+    width: 70%;
+    left: 15%;
+  }
+
+  /* line 54, ../sass/partials/_tabletL.scss */
+  .gdeimg {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 15%;
+    left: 5%;
+  }
+  /* line 61, ../sass/partials/_tabletL.scss */
+  .gdeimg .imgtaille {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 67, ../sass/partials/_tabletL.scss */
+  .cadre {
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    height: auto;
+  }
+
+  /* line 75, ../sass/partials/_tabletL.scss */
+  .description {
+    display: flex;
+    align-items: center;
+  }
+  /* line 79, ../sass/partials/_tabletL.scss */
+  .description p {
+    text-align: center;
+  }
+  /* line 83, ../sass/partials/_tabletL.scss */
+  .description a {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  /* line 89, ../sass/partials/_tabletL.scss */
+  .img {
+    position: relative;
+    width: 80%;
+    top: 50%;
+  }
+
+  /* line 95, ../sass/partials/_tabletL.scss */
+  .tech {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between;
+    text-align: center;
+  }
+  /* line 101, ../sass/partials/_tabletL.scss */
+  .tech div {
+    width: 33%;
+    height: 20vh;
+    margin: 0;
+    padding: 0 25px;
+  }
+  /* line 107, ../sass/partials/_tabletL.scss */
+  .tech div:first-child {
+    text-shadow: 0 3px 6px #F25A31;
+  }
+  /* line 111, ../sass/partials/_tabletL.scss */
+  .tech div:nth-child(2) {
+    text-shadow: 0 3px 6px #6C7EB7;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  }
+  /* line 117, ../sass/partials/_tabletL.scss */
+  .tech div:last-child {
+    text-shadow: 0 3px 6px #107CD2;
+  }
+
+  /* line 123, ../sass/partials/_tabletL.scss */
+  .technoT {
+    display: block;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 2em;
+  }
+
+  /* line 130, ../sass/partials/_tabletL.scss */
+  .descrtexte {
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    margin-top: 25vh;
+    float: left;
+    display: flex;
+  }
+  /* line 138, ../sass/partials/_tabletL.scss */
+  .descrtexte .texte {
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  /* line 148, ../sass/partials/_tabletL.scss */
+  .mescontacts {
+    top: 60%;
+  }
 }

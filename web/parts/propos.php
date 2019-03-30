@@ -1,7 +1,9 @@
 <div class="fond1">
+<p class='technoT'>Technologies</p> 
     <div class="propos">
+        
         <div class="profil">
-            <img src="web/img/photocv.jpg" alt="">
+            <img class="photo" src="web/img/photocv.jpg" alt="">
             <div class="info">
                 <p>Jordan OUDOT</p> <br>
                 <p>32 ans</p> <br>
@@ -31,29 +33,10 @@
 <div class="fond2">
     <div class="descrtexte">
         <div class="texte">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repudiandae, porro nesciunt
-                exercitationem
-                asperiores nam quaerat maiores laborum, dolor quae quo suscipit tempore quidem architecto illum ipsam
-                alias
-                sed
-                culpa? Officiis minus vel voluptas, quibusdam voluptatum laudantium fugiat facilis ab molestiae? Quas
-                est
-                dolor
-                dolorem alias eligendi inventore optio accusamus? Itaque laboriosam totam dolorum et neque minima, est
-                ipsum
-                eaque doloribus modi iure aut exercitationem earum ducimus ipsam, sunt veniam temporibus asperiores
-                numquam
-                provident! Magni error ea eveniet hic provident nobis eligendi labore omnis, quis accusamus quasi,
-                delectus
-                necessitatibus laboriosam magnam veniam quo quibusdam facilis maxime distinctio velit fugiat? Quis,
-                rem.
-                Tempore, veniam. Rerum exercitationem corrupti quibusdam enim ex tenetur ratione aliquam perferendis
-                repudiandae aut. Eaque porro voluptates unde fugit sunt, voluptate quisquam nulla dicta repudiandae
-                magnam,
-                hic
-                alias officiis perspiciatis sapiente, non excepturi. Rerum esse error accusamus doloribus sequi id
-                neque
-                aliquid ducimus, cum minus nisi repellendus dolorum? Ullam?</p>
+            <p> Adeptes des nouvelles technologies et du monde du numérique, j'ai suivis la formationde l'ecole Simplon.
+                Je continue à me former sur les nouveaux langages de programmations et sur les frameworks du moment
+                tel que Symfony ou React Js.
+                </p>
         </div>
     </div>
 </div>

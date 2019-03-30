@@ -6,6 +6,8 @@
                 <p>
                     <?= $value['description']; ?>
                 </p>
+                <br>
+                <a href="<?= $value['lien_site']; ?>" class="btn btn-primary">Voir le site</a>
             </div>
             <?php endforeach; ?>
         </div>

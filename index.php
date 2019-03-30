@@ -32,7 +32,7 @@ $sites = $siteManager->readAll();
 <body>
   <nav>
     <div class="sec">
-      <a href="#home">Home</a>
+      <a href="index.php">Home</a>
       <a href="#projets">Projets</a>
       <a href="#propos">A propos</a>
       <a href="#contact">Contact</a>
@@ -40,6 +40,14 @@ $sites = $siteManager->readAll();
     <div class="barre1"></div>
     <div class="barre2"></div>
     <div class="barre3"></div>
+  </nav>
+  <nav class="nav2">
+    <div class="sec2">
+      <a href="index.php">Home</a>
+      <a href="#projets">Projets</a>
+      <a href="#propos">A propos</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
   <section id="home">
     <?php include_once("web/parts/home.php"); ?>

@@ -1,0 +1,153 @@
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+    .carre,
+    .reflet,
+    .info,
+    .propos .profil,
+    nav {
+        display: none;
+    }
+
+    .nav2 {
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+
+        .sec2 {
+            text-align: center;
+
+            a {
+                margin: 15px;
+                text-decoration: none;
+                color: $maCouleur;
+                font-family: $maFont;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .carre {
+        display: block;
+        position: absolute;
+        width: 50%;
+        left:45%;
+    }
+
+    
+
+    .nomsite {
+        position: fixed;
+        top: 62%;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    form {
+        width: 70%;
+        left: 15%;
+    }
+
+    .gdeimg {
+        position: absolute;
+        width: 50%;
+        height: auto;
+        top: 15%;
+        left:5%;
+
+        .imgtaille {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .cadre {
+        position: absolute;
+        width: 40%;
+        left: 55%;
+        height: auto;
+
+    }
+
+    .description {
+        display: flex;
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            width: 50%;
+            margin-left: 25%;
+        }
+    }
+
+    .img {
+        position: relative;
+        width: 80%;
+        top: 50%;
+    }
+
+    .tech {
+        display: flex;
+        width: 100% !important;
+        justify-content: space-between;
+        text-align: center;
+
+        div {
+            width: 33%;
+            height: 20vh;
+            margin: 0;
+            padding: 0 25px;
+
+            &:first-child {
+                text-shadow: 0 3px 6px $couleur1;
+            }
+
+            &:nth-child(2) {
+                text-shadow: 0 3px 6px $couleur2;
+                border-left: 2px solid $maCouleur;
+                border-right: 2px solid $maCouleur;
+            }
+
+            &:last-child {
+                text-shadow: 0 3px 6px $couleur3;
+            }
+        }
+    }
+
+    .technoT {
+        display: block;
+        text-align: center;
+        padding-top: 10%;
+        font-size: 2em;
+    }
+
+    .descrtexte {
+        width: 70%;
+        margin-left: 15%;
+        height: auto;
+        margin-top: 25vh;
+        float: left;
+        display: flex;
+
+        .texte {
+            align-items: center;
+            background-color: rgba(1, 1, 1, 0.5);
+            width: 100%;
+            text-align: justify;
+            padding: 10px;
+        }
+    }
+
+
+    .mescontacts {
+        top: 60%;
+    }
+
+
+}
